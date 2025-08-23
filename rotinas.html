@@ -19,106 +19,93 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main2.css" rel="stylesheet">
 </head>
 
 <body class="service-details-page">
 
-    <header id="header" class="header d-flex align-items-center fixed-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-center">
 
-            <a href="index.html" class="logo d-flex align-items-center">
-                <h1 class="sitename">Portfólio - Emanuel</h1>
-            </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" >Home</a></li>
+          <li><a href="index.html#sobre">Sobre Mim</a></li>
+          <li><a href="index.html#curriculo">Currículo</a></li>
+          <li><a href="index.html#cases">Cases de Sucesso</a></li>
+          <li><a href="index.html#contact">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="index.html#sobre">Sobre Mim</a></li>
-                    <li><a href="index.html#curriculo">Currículo</a></li>
-                    <li><a href="index.html#cases">Cases de Sucesso</a></li>
+    </div>
+  </header>
 
-                    <li><a href="index.html#contact">Contato</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
+<main class="main">
 
+  <div class="page-title" data-aos="fade">
+    <div class="heading">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1>Gerenciamento de Rotinas</h1>
+            <p class="mb-0">API Rest para gerenciamento de rotinas, com o objetivo de realizar a automação e o monitoramento de tarefas em background.</p>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </div>
 
-    <main class="main">
-        <div class="page-title" data-aos="fade">
-            <div class="heading">
-                <div class="container">
-                    <div class="row d-flex justify-content-center text-center">
-                        <div class="col-lg-8">
-                            <h1>Gerenciamento de Rotinas</h1>
-                            <p class="mb-0"> API Rest de Gerenciamento de Rotinas, com o objetivo de
-                                realizar o gerenciamento de rotinas de forma automatica.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <nav class="breadcrumbs">
-                <div class="container">
-                    <ol>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="current">Central de Monitoramento</li>
-                    </ol>
-                </div>
-            </nav>
+  <section id="project-details" class="project-details section">
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="content-card">
+            <h3>Sobre o Projeto</h3>
+            <p class="justify">Liderei a criação de uma central de gerenciamento de rotinas para modernizar e otimizar o fluxo de trabalho da equipe de desenvolvimento. A solução substituiu o uso do Agendador de Tarefas do Windows, introduzindo uma plataforma robusta baseada em HangFire no .NET.</p>
+            <p class="justify">O novo sistema oferece uma interface centralizada para criar, agendar e gerenciar tarefas em background, com opções avançadas de configuração, como intervalos, repetições e monitoramento de status com notificações de erro. Um desafio técnico significativo foi sincronizar as ações do dashboard nativo do HangFire com nossa plataforma customizada, o que foi resolvido para garantir a consistência total dos dados.</p>
+          </div>
         </div>
 
-        <section id="service-details" class="service-details section">
-            <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div id="tecnologias" class="services-list">
-                            <a href="#" class="active">Principais Tecnologias</a>
-                            <a href="#">ASPNET Web Forms</a>
-                            <a href="#">HangFire</a>
-                            <a href="#">SQL Server</a>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="content-card">
+            <h4>Principais Tecnologias</h4>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> ASPNET Web Forms</li>
+              <li><i class="bi bi-check-circle-fill"></i> HangFire</li>
+              <li><i class="bi bi-check-circle-fill"></i> SQL Server</li>
+            </ul>
+          </div>
+        </div>
 
-                        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+          <div class="content-card">
+            <h3>Funcionalidades e Aprendizados</h3>
+            <p class="justify">
+              Cadastro, agendamento, edição e execução manual de rotinas.
+            </p>
+            <p class="justify">
+              A seguir, destaco os principais aprendizados:
+            </p>
 
-                        <h4>Sobre o Projeto</h4>
-                        <p class="justify"> Fui designado para desenvolver uma central de gerenciamento de rotinas, com
-                            o objetivo de oferecer uma interface para que a equipe de desenvolvimento pudesse criar,
-                            agendar e gerenciar rotinas de forma prática e eficiente. Anteriormente, a equipe utilizava
-                            o Agendador de Tarefas do Windows para executar arquivos .NET (.exe).
+            <ul class="learnings-list">
+              <li><i class="bi bi-check-circle-fill"></i> <span>Reflexão Computacional</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> <span>HangFire</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> <span>Background Scheduler</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> <span>Expressões CRON</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> <span>Sincronização de dados</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
 
-                            O novo sistema, que utiliza o pacote HangFire no .NET, permite a programação de rotinas com horários específicos, configuração de
-                            intervalos entre execuções, definição de datas e quantidade de repetições. Além disso, ele
-                            monitora o status de cada rotina, enviando notificações em caso de falhas ou erros. As
-                            tarefas são executadas em background e podem ser acompanhadas tanto pelo dashboard nativo do
-                            HangFire, quanto pela nossa própria plataforma.
-                            Um grande desafio, foi sincronizar as ações que eram feitas no dashboard do HangFire com o
-                            nosso sistema, garantindo que as informações estivessem sempre atualizadas e consistentes.
-                        </p>
-                    </div>
-
-                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-
-                        <h3>Funcionalidades</h3>
-                        <p class="justify">
-                           Cadastro, agendamento, edição e execução manual de rotinas <br>
-
-                            A seguir, destaco os principais aprendizados:
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle"></i> <span>Reflexão Computacional</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>HangFire</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Background Scheduler</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Expressões CRON</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Sincronização de dados</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
+</main>
 
 
 

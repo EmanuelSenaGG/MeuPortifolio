@@ -19,110 +19,94 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main2.css" rel="stylesheet">
 </head>
 
 <body class="service-details-page">
 
-    <header id="header" class="header d-flex align-items-center fixed-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-center">
 
-            <a href="index.html" class="logo d-flex align-items-center">
-                <h1 class="sitename">Portfólio - Emanuel</h1>
-            </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" >Home</a></li>
+          <li><a href="index.html#sobre">Sobre Mim</a></li>
+          <li><a href="index.html#curriculo">Currículo</a></li>
+          <li><a href="index.html#cases">Cases de Sucesso</a></li>
+          <li><a href="index.html#contact">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="index.html#sobre">Sobre Mim</a></li>
-                    <li><a href="index.html#curriculo">Currículo</a></li>
-                    <li><a href="index.html#cases">Cases de Sucesso</a></li>
+    </div>
+  </header>
 
-                    <li><a href="index.html#contact">Contato</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
+ <main class="main">
 
+  <div class="page-title" data-aos="fade">
+    <div class="heading">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1>Central de Monitoramento</h1>
+            <p class="mb-0">Sistema Web para monitoramento em tempo real de status de APIs e testes de endpoints.</p>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </div>
 
-    <main class="main">
-        <div class="page-title" data-aos="fade">
-            <div class="heading">
-                <div class="container">
-                    <div class="row d-flex justify-content-center text-center">
-                        <div class="col-lg-8">
-                            <h1>Central de Monitoramento</h1>
-                            <p class="mb-0"> Sistema Web para monitoramento em tempo real de status de APIs e testes de
-                                endpoints.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <nav class="breadcrumbs">
-                <div class="container">
-                    <ol>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="current">Central de Monitoramento</li>
-                    </ol>
-                </div>
-            </nav>
+  <section id="project-details" class="project-details section">
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="content-card">
+            <h3>Sobre o Projeto</h3>
+            <p class="justify">Liderei o desenvolvimento de um sistema de monitoramento para APIs, projetado para verificar a saúde de múltiplos endpoints em tempo real, incluindo um gateway principal e diversos microsserviços. Desenvolvida em ASP.NET Web Forms, a aplicação realiza verificações automáticas a cada minuto e atualiza um dashboard com o status de cada serviço.</p>
+            <p class="justify">A solução também oferece uma interface para testes de endpoints individuais, onde utilizei JavaScript e a API Fetch para permitir que os usuários personalizem requisições. O sistema gera relatórios detalhados, analisando tempo de resposta, headers, tamanho do payload e status code, funcionando como uma ferramenta de diagnóstico e saúde para nosso ecossistema de APIs.</p>
+          </div>
         </div>
 
-        <section id="service-details" class="service-details section">
-            <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div id="tecnologias" class="services-list">
-                            <a href="#" class="active">Principais Tecnologias</a>
-                            <a href="#">ASPNET Web Forms</a>
-                            <a href="#">JavaScript</a>
-                            <a href="#">ASPNET Core Web API</a>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="content-card">
+            <h4>Principais Tecnologias</h4>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i>ASPNET Web Forms</li>
+              <li><i class="bi bi-check-circle-fill"></i>JavaScript</li>
+              <li><i class="bi bi-check-circle-fill"></i>Fetch API</li>
+              <li><i class="bi bi-check-circle-fill"></i>ASPNET Core Web API</li>
+            </ul>
+          </div>
+        </div>
 
-                        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+          <div class="content-card">
+            <h3>Funcionalidades e Aprendizados</h3>
+            <p class="justify">
+              Atualização automática do status de cada API a cada 1 minuto, com a possibilidade de realizar testes individuais de cada endpoint, com os parâmetros personalizados pelo usuário.
+            </p>
+            <p class="justify">
+              A seguir, destaco os principais aprendizados:
+            </p>
 
-                        <h4>Sobre o Projeto</h4>
-                        <p class="justify"> Na empresa em que atuo, fui designado para desenvolver um sistema de
-                            monitoramento
-                            de APIs. O sistema tem como objetivo monitorar o status de APIs de maneira automatica e
-                            realizar a atualização em tela, além de realizar testes de
-                            endpoints e
-                            fornecer
-                            relatórios detalhados sobre o desempenho das APIs, como cabecalhos, tempo de resposta,
-                            tamanho da resposta e
-                            status da requisição.
-                            O sistema é desenvolvido em ASPNET Web Forms e realiza a verificação do status de cada
-                            endpoint a cada 1 minuto, os endpoints pertecem a varios sistemas, um deles sendo o gateway
-                            e os outros sendo microserviços, todos sendo desenvolvidos com ASPNET Core Web API. O
-                            JavaScript foi utilizado para realizar os testes individuais, com os parametros
-                            personalizados pelo usuario, por meio do fetch, além de obter os dados da requisição, montar
-                            o relatorio e mostrar em tela, como se fosse um Swagger por exemplo.
-                        </p>
-                    </div>
+            <ul class="learnings-list">
+              <li><i class="bi bi-check-circle-fill"></i> <span>Programação Assíncrona</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> <span>Manipulação de JSON em JavaScript</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> <span>Requisições com Fetch API</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> <span>Configuração de política de CORS</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> <span>Manipulação de estado de objeto</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
 
-                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-
-                        <h3>Funcionalidades</h3>
-                        <p class="justify">
-                            Atualização automática do status de cada API a cada 1 minuto, com a possibilidade de
-                            realizar testes individuais de cada endpoint, com os parâmetros personalizados pelo usuário.<br>
-
-                            A seguir, destaco os principais aprendizados:
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle"></i> <span>Programação Assincrona</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Manipulação JSON em JavaScript</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Requisição Fetch</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Configuração de política de CORS</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Manipulação de estado de objeto</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
+</main>
 
 
 
